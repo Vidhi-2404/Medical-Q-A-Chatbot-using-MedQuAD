@@ -1,0 +1,36 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment files
+.env
+.env.local
+
+# Streamlit secrets & cache
+.streamlit/secrets.toml
+
+# Datasets and large vector databases (keep raw data and large ChromaDB out of Git)
+data/raw/
+data/chroma_db/
+data/processed/*.parquet
+data/processed/*.jsonl
+
+# Note: data/sample_medquad.csv is committed intentionally so the app
+# runs immediately out-of-the-box on Streamlit Community Cloud without downloading 500MB XMLs.
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
